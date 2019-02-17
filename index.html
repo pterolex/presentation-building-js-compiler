@@ -34,6 +34,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 75%;
         }
 
         .demo-text.shout {
@@ -54,24 +55,29 @@
 
         <h2>Building a Pascal-like language compiler to Javascript</h2>
 
-        <img src="images/react-logo.png" />
+        <img src="images/intro_logo.png" />
         <style>
             #cover {
                 text-align: center;
             }
             #cover img {
-                width: 600px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1000px;
             }
 
             #cover h2 {
-                margin:120px 0 0;
-                color:black;
-                text-align:center;
+                margin: 120px 0 0;
+                color: white;
+                text-align: center;
                 font-size: 100px;
-            }
-
-            .performance img {
-                width: 100%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.2);
+                z-index: 10;
+                font-size: 60px;
             }
         </style>
     </section>
@@ -121,10 +127,106 @@
         </style>
     </section>
 
+    <section class="slide">
+        <h2>Main goals and motivation</h2>
+
+        <ul class="big-list">
+            <li>HANSA Logo here?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>The existing code</h2>
+
+        <ul class="big-list">
+            <li>Screenshot with code here</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Possible strategies</h2>
+
+        <ul class="big-list">
+            <li>Port the HAL code by hand.</li>
+            <li>Try to make a compiler and do it automatically.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Compilers in the JavaScript world</h2>
+
+        <ul class="big-list">
+            <li>Babel</li>
+            <li>TypeScript</li>
+            <li class="next">Elm</li>
+            <li class="next">PureScript</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="thanks">
+        <h2 class="shout shrink demo-text">
+           Let's build a compiler!
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Compilation stages</h2>
+        <div class="image-center-container">
+            <img src="./images/general_scheme.png" width="700" height="150" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Parser?</h2>
+        <div class="image-center-container">
+            <img src="./images/parser_scheme.jpg" width="700" height="400" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Lexer</h2>
+        <p>Code –> Tokens</p>
+    </section>
+
+    <section class="slide">
+        <h2>Lexer</h2>
+        <p>Tokens example here</p>
+    </section>
+
+    <section class="slide">
+        <h2>Syntactic analysis</h2>
+        <p>Tokens –> Abstract Syntax Tree</p>
+    </section>
+
+    <section class="slide">
+        <h2>Abstract Syntax Tree</h2>
+        <div class="image-center-container">
+            <img src="./images/ast_example.png" width="1000" height="500" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Tools</h2>
+        <ol class="big-list">
+            <li>Parser generation</li>
+            <ul>
+                <li class="next">PEG.js</li>
+            </ul>
+            <li class="next">AST Manipolation</li>
+            <ul>
+                <li class="next">Babel</li>
+            </ul>
+            <li class="next">Code generation</li>
+            <ul>
+                <li class="next">Babel</li>
+            </ul>
+        </ul>
+    </section>
+
     <section class="slide" id="references">
         <h2>References</h2>
         <ul>
-            <li><a href="https://github.com/chentsulin/awesome-react-renderer">Awesome list of React Renderer</a></li>
+            <li><a href="https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811">Compilers: Principles, Techniques, and Tools</a></li>
         </ul>
     </section>
 
