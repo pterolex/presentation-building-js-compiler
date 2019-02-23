@@ -53,7 +53,7 @@
     </header>
     <section class="slide" id="cover">
 
-        <h2>Building a Pascal-like language compiler to Javascript</h2>
+        <h2>Building a simple language compiler to Javascript</h2>
 
         <img src="images/intro_logo.png" />
         <style>
@@ -89,7 +89,7 @@
             <div>
                 <h2>Alexey Zaslavsky</h2>
                 <div class="wrapper">
-                    Front-end Technical Lead at
+                    Technical Lead at
                     <img class="logo" src="images/wl.png" />
                 </div>
             </div>
@@ -128,20 +128,13 @@
     </section>
 
     <section class="slide">
-        <h2>Main goals and motivation</h2>
+        <h2>The code (Hansa Application Language)</h2>
 
-        <ul class="big-list">
-            <li>HANSA Logo here?</li>
-        </ul>
+        <div class="image-center-container">
+            <img src="./images/hal_code.png" width="500" height="400" />
+        </div>
     </section>
 
-    <section class="slide">
-        <h2>The existing code</h2>
-
-        <ul class="big-list">
-            <li>Screenshot with code here</li>
-        </ul>
-    </section>
 
     <section class="slide">
         <h2>Possible strategies</h2>
@@ -152,6 +145,7 @@
         </ul>
     </section>
 
+
     <section class="slide">
         <h2>Compilers in the JavaScript world</h2>
 
@@ -161,6 +155,23 @@
             <li class="next">Elm</li>
             <li class="next">PureScript</li>
         </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Why is this useful?</h2>
+
+        <ul class="big-list">
+            <li>Understand how tools like Babel, TypeScript, ESLint work</li>
+            <li>Learn how to write ESLint rules/Babel plugins.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Babel</h2>
+
+        <div class="image-center-container">
+            <img src="./images/babel_example.png" width="900" height="250" />
+        </div>
     </section>
 
     <section class="slide" id="thanks">
@@ -177,31 +188,77 @@
     </section>
 
     <section class="slide">
-        <h2>Parser?</h2>
+        <h2>Parser components</h2>
         <div class="image-center-container">
             <img src="./images/parser_scheme.jpg" width="700" height="400" />
         </div>
     </section>
 
     <section class="slide">
-        <h2>Lexer</h2>
-        <p>Code –> Tokens</p>
+        <h2>The code</h2>
+        <div class="image-center-container">
+            <img src="./images/js_code_example.png" width="250" height="200" />
+        </div>
     </section>
 
     <section class="slide">
         <h2>Lexer</h2>
-        <p>Tokens example here</p>
+        <div class="image-center-container">
+            <img src="./images/source-code_ast.png" width="700" height="150" />
+        </div>
     </section>
 
     <section class="slide">
-        <h2>Syntactic analysis</h2>
-        <p>Tokens –> Abstract Syntax Tree</p>
+        <h2>Lexer</h2>
+        <div class="image-center-container">
+            <img src="./images/tokens.png" width="400" height="600" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Lexer</h2>
+        <div class="image-center-container">
+            <img src="./images/tokens_general.png" width="600" height="250" />
+        </div>
     </section>
 
     <section class="slide">
         <h2>Abstract Syntax Tree</h2>
         <div class="image-center-container">
             <img src="./images/ast_example.png" width="1000" height="500" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Code generator</h2>
+        <div class="image-center-container">
+            <img src="./images/ast_source-code.png" width="700" height="200" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <a href="https://astexplorer.net">AST Explorer</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <a href="https://www.ecma-international.org/ecma-262/9.0/">ECMAScript Spec</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Parser</h2>
+        <ol class="big-list">
+            <li class="next">Regular Expressions?</li>
+            <li class="next">Context-Free Grammar (CFG)</li>
+            <li class="next">Parsing Expression Grammar (PEG)</li>
+    </section>
+    <section class="slide">
+        <h2>The Grammar</h2>
+        <div class="image-center-container">
+            <img src="./images/scary_shit_wikipedia.png" width="700" height="350" />
         </div>
     </section>
 
@@ -223,10 +280,44 @@
         </ul>
     </section>
 
+    <section class="slide">
+        <h2>The demo</h2>
+        <div class="image-center-container next">
+            <img src="./images/owl_1.jpg" width="500" height="400" />
+        </div>
+    </section>
+
+
+    <section class="slide">
+        <h2 class="shout shrink demo-text">
+            <b>Demo 1:</b>
+            <br />
+            <br />
+            Simple compiler
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink demo-text">
+            <b>Demo 2:</b>
+            <br />
+            <br />
+            Ze Real Compiler
+        </h2>
+    </section>
+
+    <!-- <section class="slide">
+        <h2>How do I build a compiler?</h2>
+        <div class="image-center-container">
+            <img src="./images/owl_2.jpg" width="500" height="400" />
+        </div>
+    </section> -->
+
     <section class="slide" id="references">
         <h2>References</h2>
         <ul>
             <li><a href="https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811">Compilers: Principles, Techniques, and Tools</a></li>
+            <li><a href="http://blog.reverberate.org/2013/09/ll-and-lr-in-context-why-parsing-tools.html">LL and LR in Context: Why Parsing Tools Are Hard</a></li>
         </ul>
     </section>
 
